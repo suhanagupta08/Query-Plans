@@ -1,0 +1,48 @@
+COPY region
+FROM '.....\region.csv' 
+DELIMITER ',' 
+CSV;
+
+COPY nation
+FROM '.....\nation.csv' 
+DELIMITER ',' 
+CSV;
+
+(Modify line 1 region to 0)
+
+COPY part
+FROM '.....\part.csv' 
+DELIMITER ',' 
+CSV;
+
+COPY supplier
+FROM '.....\supplier.csv' 
+DELIMITER ',' 
+CSV;
+
+COPY partsupp
+FROM '.....\partsupp.csv' 
+DELIMITER ',' 
+CSV;
+
+COPY customer
+FROM '.....\customer.csv' 
+DELIMITER ',' 
+CSV;
+
+COPY orders
+FROM '.....\orders.csv' 
+DELIMITER ',' 
+CSV;
+
+COPY lineitem
+FROM '.....\lineitem.csv' 
+DELIMITER ',' 
+CSV;
+
+
+
+
+
+
+
